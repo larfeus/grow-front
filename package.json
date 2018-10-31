@@ -1,0 +1,31 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "Devices front-end compilation",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "larfeus",
+  "license": "ISC",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.2",
+    "axios": "^0.18.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.2.0",
+    "jquery": "^3.3.1",
+    "laravel-mix": "^2.1.14",
+    "luxon": "^1.4.4",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1"
+  }
+}
